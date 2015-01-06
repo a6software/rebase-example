@@ -1,8 +1,29 @@
 <?php
 
+/**
+ * Class ExampleClass
+ */
 class ExampleClass
 {
+    /**
+     * @var
+     */
     private $property;
+    /**
+     * @var
+     */
+    private $secondProperty;
+
+
+    /**
+     * @param $property
+     * @param $secondProperty
+     */
+    public function __construct($property, $secondProperty)
+    {
+        $this->property;
+        $this->secondProperty;
+    }
 
     /**
      * @return mixed
@@ -13,13 +34,12 @@ class ExampleClass
     }
 
     /**
-     * @param mixed $property
-     * @return ExampleClass
+     * @return mixed
      */
-    public function setProperty($property)
+    public function getSecondProperty()
     {
-        $this->property = $property;
-
-        return $this;
+        return $this->secondProperty;
     }
+
+
 }
